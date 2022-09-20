@@ -1,0 +1,102 @@
+header{
+    height: 80px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_logo{
+    border: 1px solid black;
+    width: 20%;
+    height: 100%;
+}
+.header_contacts{
+    border: 1px solid black;
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_contacts p{
+    font-size: 16px;
+}
+.header_contacts h6{
+    font-size: 18px;
+}
+.header_search{
+    border: 1px solid black;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header_search input{
+    border: 2px solid #BBBAB9;
+    color: #BBBAB9;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: white;
+
+
+}
+.header_search button{
+    position: absolute;
+    width: 2vw;
+    height: 3.6vh;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10%;
+    color: white;
+    background-color: #DA6A00;
+    background-image: url('/src/images/search.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+.header_menu{
+    border: 1px solid black;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    position: absolute;
+    top: 2.5vw;
+    left: 77vw;
+    width: 2vw;
+    height: 4.6vh;
+    cursor: pointer;
+    z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #DA6A00;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+
